@@ -4,7 +4,7 @@
  * Plugin URI: http://www.headmade.rs
  * Description: Plugin for google maps
  * Author: Slavko Belic
- * Version: 1.3
+ * Version: 1.6
  * Author URI: http://www.headmade.rs
  * Text Domain: super-maps
  * Domain Path: /languages/
