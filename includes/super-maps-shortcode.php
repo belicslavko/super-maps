@@ -10,6 +10,7 @@ function super_maps_public( $atts ) {
 
     $id = intval($atts['map']);
 
+
     $map = $wpdb->get_row("SELECT * FROM ".SUPERMAPS_DB_MAP ." WHERE id = ".$id);
     $map_style = $wpdb->get_row("SELECT * FROM ".SUPERMAPS_DB_STYLE_MAP ." WHERE id = ".$map->style);
 
@@ -26,32 +27,45 @@ function super_maps_public( $atts ) {
     $line = $wpdb->get_results("SELECT * FROM ".SUPERMAPS_DB_LINE ." WHERE map = ".$id);
 
 
+    if($map->scroll == 1){
+       $scroll = 'true';
+    }else{
+        $scroll = 'false';
+    }
+
     $print = '';
 
-    $print .= '<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>';
 
     $print .= "<script>
 
-        var map;
+        var map".$map->id.";
         var markers = [];
 
-        function initialize() {
+        function initialize".$map->id."() {
 
         var mapOptions = {
-           zoom: ".$map->zoom.",
-           center: new google.maps.LatLng(".$map->latitude.", ".$map->longitude."),
+           zoom: " . $map->zoom . ",
+           scrollwheel: " . $scroll . ",
+           center: new google.maps.LatLng(" . $map->latitude . ", " . $map->longitude . "),
            mapTypeId: google.maps.MapTypeId.TERRAIN
            ";
-         if(!empty($map_style->theme_array)){
 
-    $print .= "styles: ".str_replace('\&quot;', '"', esc_html($map_style->theme_array));
-
-         }
 
     $print .= "    };
 
-        map = new google.maps.Map(document.getElementById('map_polygon'),
+        map".$map->id." = new google.maps.Map(document.getElementById('map_polygon".$map->id."'),
               mapOptions);";
+
+
+    if(!empty($map_style->theme_array)){
+
+        $print .= "
+        var styles = ".stripslashes($map_style->theme_array);
+        $print .= "
+        map".$map->id.".setOptions({styles: styles});";
+
+    }
+
 
     foreach($pol as $p){
 
@@ -88,7 +102,7 @@ function super_maps_public( $atts ) {
             fillOpacity: fillOpacity
           });
 
-          polygonObj".$p->id.".setMap(map);";
+          polygonObj".$p->id.".setMap(map".$map->id.");";
 
     }
 
@@ -128,7 +142,7 @@ function super_maps_public( $atts ) {
 
           });
 
-          lineObj".$l->id.".setMap(map);";
+          lineObj".$l->id.".setMap(map".$map->id.");";
 
     }
 
@@ -139,15 +153,20 @@ function super_maps_public( $atts ) {
 
     $style_mark = $wpdb->get_row("SELECT * FROM ". SUPERMAPS_DB_STYLE_MARKER ." where id =".$m->style);
 
+
+
     $print .= "
     var marker".$m->id." = new google.maps.LatLng(".$m->latitude.", ".$m->longitude.");
     var marker = new google.maps.Marker({
     position: marker".$m->id.",
-    map: map,
+    map: map".$map->id.",
     animation: google.maps.Animation.DROP,
-    title:'".$m->html."',
-    icon: '".$style_mark->file."',
-    });
+    title:'".$m->html."',";
+
+    if(!empty($style_mark->file))
+    $print .= "icon: '".$style_mark->file."',";
+
+    $print .= "});
 
     markers.push(marker);
 
@@ -178,7 +197,7 @@ function super_maps_public( $atts ) {
 
         }else{
 
-            name.setMap(map);
+            name.setMap(map".$map->id.");
         }
 
 
@@ -195,19 +214,38 @@ function super_maps_public( $atts ) {
 
         }else{
 
-             markers[markerId-1].setMap(map);
+             markers[markerId-1].setMap(map".$map->id.");
         }
 
 
 
     }
 
+    ";
 
-    google.maps.event.addDomListener(window, 'load', initialize);
+    if(empty($map->load_variable)) {
+        $print .= "google.maps.event.addDomListener(window, 'load', initialize".$map->id.");";
+    } else {
+        $print .= "$( '".$map->load_variable."' ).click(function() {
 
-    </script>";
 
-    $print .= '<div id="map_polygon" style="width:'.$map_style->width.'px; height:'.$map_style->height.'px"></div>';
+        $( document ).ajaxComplete(function() {
+
+        initialize".$map->id."();
+
+        var center".$map->id." = map".$map->id.".getCenter();
+        google.maps.event.trigger(map".$map->id.", 'resize');
+        map".$map->id.".setCenter(center".$map->id.");
+
+
+        });
+
+        });";
+    }
+
+    $print .= "</script>";
+
+    $print .= '<div id="map_polygon'.$map->id.'" style="width:'.$map_style->width.'; height:'.$map_style->height.'"></div>';
 
 
     $print .= "<div id='checkMaps'>";

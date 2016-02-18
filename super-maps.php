@@ -3,7 +3,7 @@
  * Plugin Name: SuperMaps
  * Plugin URI: http://www.headmade.rs
  * Description: Plugin for google maps
- * Author: Slavko Belic
+ * Author: headmade.rs
  * Version: 1.6
  * Author URI: http://www.headmade.rs
  * Text Domain: super-maps
@@ -322,7 +322,26 @@ function super_maps_css()
 
    echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('super-maps/css/style.css') . '">';
 
+
 }
+
+function super_maps_custom_js() {
+
+
+    echo "<script>
+        if (typeof google != 'object' && typeof google.maps != 'object') {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'http://maps.google.com/maps/api/js?sensor=false';
+        document.body.appendChild(script);
+    }</script>";
+
+
+}
+// Add hook for admin <head></head>
+add_action('admin_head', 'super_maps_custom_js');
+// Add hook for front-end <head></head>
+add_action('wp_head', 'super_maps_custom_js');
 
 
 // Polygon header

@@ -30,7 +30,13 @@ function super_maps_map(){
         $print .= "<tr>";
         $print .= "<td>".$r->id."</td>";
         $print .= "<td>".$r->name."</td>";
-        $print .= "<td>".$results_style->name."</td>";
+
+        if(!empty($results_style->name)) {
+            $print .= "<td>" . $results_style->name . "</td>";
+        }else{
+            $print .= "<td></td>";
+        }
+
         if($r->active == 1){
             $print .= "<td><span class='dashicons dashicons-yes'></span></td>";
         }else{
@@ -80,6 +86,11 @@ function super_maps_map_add(){
     $print .= "<input type='text' name='name'>";
     $print .= "</div>";
     $print .= "<div>";
+    $print .= "<label>".__('ID za ocitavanje', 'super-maps')."</label>";
+    $print .= "<input type='text' name='load_variable'>";
+    $print .= "</div>";
+
+    $print .= "<div>";
     $print .= "<label>".__('Stil', 'super-maps')."</label>";
     $print .= "<select name='style'>";
 
@@ -91,6 +102,11 @@ function super_maps_map_add(){
         $print .= "<option>".__('Ne postoje stilovi', 'super-maps')."</option>";
     }
     $print .= "</select>";
+    $print .= "</div>";
+
+    $print .= "<div>";
+    $print .= "<label>".__('Scroll', 'super-maps')."</label>";
+    $print .= "<input type='checkbox' name='scroll' value='1'>";
     $print .= "</div>";
 
     $print .= "<div>";
@@ -130,17 +146,48 @@ function super_maps_map_add(){
 
     if(!empty($_POST)){
 
+        if(!empty($_POST['active'])){
+            $active = $_POST['active'];
+        }else{
+            $active = '';
+        }
+
+        if(!empty($_POST['scroll'])){
+            $scroll = $_POST['scroll'];
+        }else{
+            $scroll = '';
+        }
+
+        if(!empty($_POST['layerMarker'])){
+            $layerMarker = $_POST['layerMarker'];
+        }else{
+            $layerMarker = '';
+        }
+
+        if(!empty($_POST['layerPolygon'])){
+            $layerPolygon = $_POST['layerPolygon'];
+        }else{
+            $layerPolygon = '';
+        }
+
+        if(!empty($_POST['layerLine'])){
+            $layerLine = $_POST['layerLine'];
+        }else{
+            $layerLine = '';
+        }
 
         $wpdb->insert(
             SUPERMAPS_DB_MAP,
             array(
                 'name' => sanitize_text_field($_POST['name']),
+                'load_variable' => sanitize_text_field($_POST['load_variable']),
                 'date' => date("Y-m-d H:i:s"),
                 'style' => intval($_POST['style']),
-                'layerMarker' => intval($_POST['layerMarker']),
-                'layerPolygon' => intval($_POST['layerPolygon']),
-                'layerLine' => intval($_POST['layerLine']),
-                'active' => intval($_POST['active']),
+                'scroll' => $scroll,
+                'layerMarker' => $layerMarker,
+                'layerPolygon' => $layerPolygon,
+                'layerLine' => $layerLine,
+                'active' => $active,
                 'longitude' => sanitize_text_field($_POST['longitude']),
                 'latitude' => sanitize_text_field($_POST['latitude']),
                 'zoom' => intval($_POST['zoom'])
@@ -194,6 +241,10 @@ function super_maps_map_edit(){
     $print .= "<input type='text' name='name' value='".$map->name."'>";
     $print .= "</div>";
     $print .= "<div>";
+    $print .= "<label>".__('ID za ocitavanje', 'super-maps')."</label>";
+    $print .= "<input type='text' name='load_variable' value='".$map->load_variable."'>";
+    $print .= "</div>";
+    $print .= "<div>";
     $print .= "<label>".__('Stil', 'super-maps')."</label>";
     $print .= "<select name='style'>";
     if(!empty($style)){
@@ -210,14 +261,13 @@ function super_maps_map_edit(){
     $print .= "</select>";
     $print .= "</div>";
     $print .= "<div>";
-    $print .= "<label>".__('Aktivno', 'super-maps')."</label>";
-    if($map->active == 1){
-        $print .= "<input type='checkbox' name='active' value='1' checked>";
+    $print .= "<label>".__('Scroll', 'super-maps')."</label>";
+    if($map->scroll == 1){
+        $print .= "<input type='checkbox' name='scroll' value='1' checked>";
     }else{
-        $print .= "<input type='checkbox' name='active' value='1'>";
+        $print .= "<input type='checkbox' name='scroll' value='1'>";
     }
     $print .= "</div>";
-
 
     $print .= "<div>";
     $print .= "<label>".__('Marker layer', 'super-maps')."</label>";
@@ -241,10 +291,20 @@ function super_maps_map_edit(){
 
     $print .= "<div>";
     $print .= "<label>".__('Line layer', 'super-maps')."</label>";
-    if($map->LayerLine == 1){
-        $print .= "<input type='checkbox' name='LayerLine' value='1' checked>";
+    if($map->layerLine == 1){
+        $print .= "<input type='checkbox' name='layerLine' value='1' checked>";
     }else{
-        $print .= "<input type='checkbox' name='LayerLine' value='1'>";
+        $print .= "<input type='checkbox' name='layerLine' value='1'>";
+    }
+    $print .= "</div>";
+
+
+    $print .= "<div>";
+    $print .= "<label>".__('Aktivno', 'super-maps')."</label>";
+    if($map->active == 1){
+        $print .= "<input type='checkbox' name='active' value='1' checked>";
+    }else{
+        $print .= "<input type='checkbox' name='active' value='1'>";
     }
     $print .= "</div>";
 
@@ -270,16 +330,48 @@ function super_maps_map_edit(){
 
     if(!empty($_POST)){
 
+        if(!empty($_POST['active'])){
+            $active = $_POST['active'];
+        }else{
+            $active = '';
+        }
+
+        if(!empty($_POST['layerMarker'])){
+            $layerMarker = $_POST['layerMarker'];
+        }else{
+            $layerMarker = '';
+        }
+
+        if(!empty($_POST['scroll'])){
+            $scroll = $_POST['scroll'];
+        }else{
+            $scroll = '';
+        }
+
+        if(!empty($_POST['layerPolygon'])){
+            $layerPolygon = $_POST['layerPolygon'];
+        }else{
+            $layerPolygon = '';
+        }
+
+        if(!empty($_POST['layerLine'])){
+            $layerLine = $_POST['layerLine'];
+        }else{
+            $layerLine = '';
+        }
+
         $wpdb->update(
             SUPERMAPS_DB_MAP,
             array(
                 'name' => sanitize_text_field($_POST['name']),
+                'load_variable' => sanitize_text_field($_POST['load_variable']),
                 'date' => date("Y-m-d H:i:s"),
                 'style' => intval($_POST['style']),
-                'layerMarker' => intval($_POST['layerMarker']),
-                'layerPolygon' => intval($_POST['layerPolygon']),
-                'layerLine' => intval($_POST['layerLine']),
-                'active' => intval($_POST['active']),
+                'scroll' => $scroll,
+                'layerMarker' => $layerMarker,
+                'layerPolygon' => $layerPolygon,
+                'layerLine' => $layerLine,
+                'active' => $active,
                 'longitude' => sanitize_text_field($_POST['longitude']),
                 'latitude' => sanitize_text_field($_POST['latitude']),
                 'zoom' => intval($_POST['zoom'])

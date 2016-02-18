@@ -25,13 +25,25 @@ function super_maps_line_list()
     foreach ($results as $r) {
 
         $results_style = $wpdb->get_row('SELECT * FROM '.SUPERMAPS_DB_STYLE_LINE.' WHERE id = ' . $r->style, OBJECT);
+
         $results_map = $wpdb->get_row('SELECT * FROM '.SUPERMAPS_DB_MAP.' WHERE id = ' . $r->map, OBJECT);
+
 
         $print .= "<tr>";
         $print .= "<td>" . $r->id . "</td>";
         $print .= "<td>" . $r->name . "</td>";
-        $print .= "<td>" . $results_style->name . "</td>";
-        $print .= "<td>" . $results_map->name . "</td>";
+
+        if(!empty($results_style->name)) {
+            $print .= "<td>" . $results_style->name . "</td>";
+        }else{
+            $print .= "<td></td>";
+        }
+
+        if(!empty($results_map->name)) {
+            $print .= "<td>" . $results_map->name . "</td>";
+        }else{
+            $print .= "<td></td>";
+        }
 
         if ($r->active == 1) {
             $print .= "<td><span class='dashicons dashicons-yes'></span></td>";
@@ -117,6 +129,16 @@ function super_maps_line_add()
 
     if (!empty($_POST)) {
 
+        if(!empty($_POST['active'])){
+
+            $active = $_POST['active'];
+
+        }else{
+
+            $active = '';
+
+        }
+
         $wpdb->insert(
             SUPERMAPS_DB_LINE,
             array(
@@ -126,7 +148,7 @@ function super_maps_line_add()
                 'poligon_cord' => sanitize_text_field($_POST['poligon_cord']),
                 'html' => sanitize_text_field($_POST['html']),
                 'date' => date("Y-m-d H:i:s"),
-                'active' => intval($_POST['active'])
+                'active' => $active
             )
         );
 
@@ -209,11 +231,14 @@ function super_maps_line_edit()
 
     $print .= "<div>";
     $print .= "<label>" . __('Aktivno', 'super-maps') . "</label>";
+
+
     if ($pol->active == 1) {
         $print .= "<input type='checkbox' name='active' value='1' checked>";
     } else {
         $print .= "<input type='checkbox' name='active' value='1'>";
     }
+
     $print .= "</div>";
 
     $print .= "<div>";
@@ -224,6 +249,16 @@ function super_maps_line_edit()
 
     if (!empty($_POST)) {
 
+        if(!empty($_POST['active'])){
+
+            $active = $_POST['active'];
+
+        }else{
+
+            $active = '';
+
+        }
+
         $wpdb->update(
             SUPERMAPS_DB_LINE,
             array(
@@ -233,7 +268,7 @@ function super_maps_line_edit()
                 'poligon_cord' => sanitize_text_field($_POST['poligon_cord']),
                 'html' => sanitize_text_field($_POST['html']),
                 'date' => date("Y-m-d H:i:s"),
-                'active' => intval($_POST['active'])
+                'active' => $active
             ),
             array( 'id' => $_POST['id'] )
         );
@@ -255,7 +290,7 @@ function super_maps_line_del()
 
     global $wpdb;
 
-    $id = intval($_GET['pol']);
+    $id = intval($_GET['line']);
 
     $wpdb->delete(SUPERMAPS_DB_LINE, array('ID' => $id));
 

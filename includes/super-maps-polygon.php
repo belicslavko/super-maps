@@ -24,14 +24,23 @@ function super_maps_polygon_list()
 
     foreach ($results as $r) {
 
-        $results_style = $wpdb->get_row('SELECT * FROM '.SUPERMAPS_DB_STYLE_POLYGON.' WHERE id = ' . $r->style, OBJECT);
-        $results_map = $wpdb->get_row('SELECT * FROM '.SUPERMAPS_DB_MAP.' WHERE id = ' . $r->map, OBJECT);
+        $results_style = $wpdb->get_row('SELECT * FROM ' . SUPERMAPS_DB_STYLE_POLYGON . ' WHERE id = ' . $r->style, OBJECT);
+        $results_map = $wpdb->get_row('SELECT * FROM ' . SUPERMAPS_DB_MAP . ' WHERE id = ' . $r->map, OBJECT);
 
         $print .= "<tr>";
         $print .= "<td>" . $r->id . "</td>";
         $print .= "<td>" . $r->name . "</td>";
-        $print .= "<td>" . $results_style->name . "</td>";
-        $print .= "<td>" . $results_map->name . "</td>";
+        if (!empty($results_style->name)){
+            $print .= "<td>" . $results_style->name . "</td>";
+        }else{
+            $print .= "<td></td>";
+        }
+
+        if (!empty($results_map->name)) {
+            $print .= "<td>" . $results_map->name . "</td>";
+        }else{
+            $print .= "<td></td>";
+        }
 
         if ($r->active == 1) {
             $print .= "<td><span class='dashicons dashicons-yes'></span></td>";
@@ -117,6 +126,12 @@ function super_maps_polygon_add()
 
     if (!empty($_POST)) {
 
+        if(!empty($_POST['active'])){
+            $active = $_POST['active'];
+        }else{
+            $active = '';
+        }
+
         $wpdb->insert(
             SUPERMAPS_DB_POLYGON,
             array(
@@ -126,7 +141,7 @@ function super_maps_polygon_add()
                 'poligon_cord' => sanitize_text_field($_POST['poligon_cord']),
                 'html' => sanitize_text_field($_POST['html']),
                 'date' => date("Y-m-d H:i:s"),
-                'active' => intval($_POST['active'])
+                'active' => $active
             )
         );
 
@@ -224,6 +239,12 @@ function super_maps_polygon_edit()
 
     if (!empty($_POST)) {
 
+        if(!empty($_POST['active'])){
+            $active = $_POST['active'];
+        }else{
+            $active = '';
+        }
+
         $wpdb->update(
             SUPERMAPS_DB_POLYGON,
             array(
@@ -233,7 +254,7 @@ function super_maps_polygon_edit()
                 'poligon_cord' => sanitize_text_field($_POST['poligon_cord']),
                 'html' => sanitize_text_field($_POST['html']),
                 'date' => date("Y-m-d H:i:s"),
-                'active' => intval($_POST['active'])
+                'active' => $active
             ),
             array( 'id' => $_POST['id'] )
         );

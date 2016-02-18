@@ -31,13 +31,25 @@ function super_maps_marker(){
         $print .= "<tr>";
         $print .= "<td>".$r->id."</td>";
         $print .= "<td>".$r->name."</td>";
-        $print .= "<td>".$results_style->name."</td>";
-        $print .= "<td>" . $results_map->name . "</td>";
+
+        if(!empty($results_style->name)) {
+            $print .= "<td>" . $results_style->name . "</td>";
+        }else{
+            $print .= "<td></td>";
+        }
+
+        if(!empty($results_map->name)) {
+            $print .= "<td>" . $results_map->name . "</td>";
+        }else{
+            $print .= "<td></td>";
+        }
+
         if($r->active == 1){
             $print .= "<td><span class='dashicons dashicons-yes'></span></td>";
         }else{
             $print .= "<td><span class='dashicons dashicons-no-alt'></span></td>";
         }
+
         $print .= "<td>".$r->date."</td>";
         $print .= "<td><a href='admin.php?page=super-maps&p=editMarker&mark=".$r->id."'><span class='dashicons dashicons-edit'></span></a> <a href='admin.php?page=super-maps&p=delMarker&mark=".$r->id."'><span class='dashicons dashicons-trash'></span></a></td>";
         $print .= "</tr>";
@@ -136,6 +148,12 @@ function super_maps_marker_add(){
 
     if(!empty($_POST)){
 
+        if(!empty($_POST['active'])){
+            $active = $_POST['active'];
+        }else{
+            $active = '';
+        }
+
         $wpdb->insert(
             SUPERMAPS_DB_MARKER,
             array(
@@ -144,7 +162,7 @@ function super_maps_marker_add(){
                 'html' => sanitize_text_field($_POST['html']),
                 'style' => intval($_POST['style']),
                 'date' => date("Y-m-d H:i:s"),
-                'active' => intval($_POST['active']),
+                'active' => $active,
                 'longitude' => sanitize_text_field($_POST['longitude']),
                 'latitude' => sanitize_text_field($_POST['latitude']),
                 'zoom' => intval($_POST['zoom'])
@@ -210,7 +228,7 @@ function super_maps_marker_edit(){
     if (!empty($map)) {
         foreach ($map as $m) {
 
-            if ($pol->map == $m->id) {
+            if ($marker->map == $m->id) {
                 $print .= "<option value='" . $m->id . "' selected>" . $m->name . "</option>";
             } else {
                 $print .= "<option value='" . $m->id . "'>" . $m->name . "</option>";
@@ -268,6 +286,12 @@ function super_maps_marker_edit(){
 
     if(!empty($_POST)){
 
+        if(!empty($_POST['active'])){
+            $active = $_POST['active'];
+        }else{
+            $active = '';
+        }
+
         $wpdb->update(
             SUPERMAPS_DB_MARKER,
             array(
@@ -276,7 +300,7 @@ function super_maps_marker_edit(){
                 'html' => sanitize_text_field($_POST['html']),
                 'style' => intval($_POST['style']),
                 'date' => date("Y-m-d H:i:s"),
-                'active' => intval($_POST['active']),
+                'active' => $active,
                 'longitude' => sanitize_text_field($_POST['longitude']),
                 'latitude' => sanitize_text_field($_POST['latitude']),
                 'zoom' => intval($_POST['zoom'])

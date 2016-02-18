@@ -152,7 +152,7 @@ function super_maps_map_style_edit(){
     $print .= "</div>";
     $print .= "<div>";
     $print .= "<label>" . __('Niz teme', 'super-maps') . "</label>";
-    $print .= "<textarea id='html' name='theme_array' >".$style->theme_array."</textarea>";
+    $print .= "<textarea id='html' name='theme_array' >".stripslashes($style->theme_array)."</textarea>";
     $print .= "</div>";
 
     $print .= "<div>";
