@@ -11,55 +11,6 @@ Text Domain: super-maps
 
 
 
-
-/*
-
-function getVersion(){
-
-    return CS_VERSION;
-}
-
-function sample_admin_notice__success() {
-
-
-    ?>
-    <div class="notice notice-success is-dismissible">
-        <p><?php echo getVersion(); ?></p>
-
-    </div>
-    <?php
-}
-
-
-*/
-
-/* Check if codestarframework already exist */
-
-/*
-
-add_action('wp', 'check_framework');
-
-function check_framework()
-{
-    if (!class_exists('CSFramework')) {
-
-        //framework not exist
-        require_once plugin_dir_path(__FILE__) . 'codestar-framework/cs-framework.php';
-
-    }else{
-
-        require_once plugin_dir_path(__FILE__) . 'include/exist-framework.php';
-
-
-    }
-
-    add_action( 'admin_notices', 'sample_admin_notice__success' );
-}
-
-
-*/
-
-
 add_action('after_setup_theme', 'check_framework');
 
 function check_framework()
