@@ -1,433 +1,292 @@
 <?php
-/**
- * Plugin Name: SuperMaps
- * Plugin URI: http://www.headmade.rs
- * Description: Plugin for google maps
- * Author: headmade.rs
- * Version: 1.6
- * Author URI: http://www.headmade.rs
- * Text Domain: super-maps
- * Domain Path: /languages/
- */
-
-
-/**
- *
- * Plugin Settings
- *
- */
-
-global $wpdb;
-
-define('SUPERMAPS_VERSION', '1.6');
-define('SUPERMAPS_DB_POLYGON', $wpdb->prefix . 'super_maps_polygon');
-define('SUPERMAPS_DB_LINE', $wpdb->prefix . 'super_maps_line');
-define('SUPERMAPS_DB_MAP', $wpdb->prefix . 'super_maps_map');
-define('SUPERMAPS_DB_MARKER', $wpdb->prefix . 'super_maps_marker');
-define('SUPERMAPS_DB_STYLE_POLYGON', $wpdb->prefix . 'super_maps_style_polygon');
-define('SUPERMAPS_DB_STYLE_LINE', $wpdb->prefix . 'super_maps_style_line');
-define('SUPERMAPS_DB_STYLE_MARKER', $wpdb->prefix . 'super_maps_style_marker');
-define('SUPERMAPS_DB_STYLE_MAP', $wpdb->prefix . 'super_maps_style_map');
+/*
+Plugin Name: SuperMaps
+Plugin URI: http://webinvade.rs
+Description: SuperMaps plugin
+Author: WebInvade.rs
+Version: 1.0
+Author URI: http://webinvade.rs
+Text Domain: super-maps
+*/
 
 
 
-// Install table
 
-register_activation_hook(__FILE__, 'super_maps_db_install');
+/*
 
-register_deactivation_hook(__FILE__, 'super_maps_db_uninstall');
+function getVersion(){
 
-/**
- *
- * Include files for project
- *
- */
-
-// include database create
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-db.php');
-
-// include public shortcode
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-shortcode.php');
-
-// include map html
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-google-map.php');
-
-// include maps
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-map.php');
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-map-style.php');
-
-// inclide marker
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-marker.php');
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-marker-style.php');
-
-// include polygon
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-polygon.php');
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-polygon-style.php');
-
-// include line
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-line.php');
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-line-style.php');
-
-// inclide settings
-include(plugin_dir_path(__FILE__) . 'includes/super-maps-settings.php');
-
-
-/**
- *
- * Admin script for plugin
- *
- */
-
-// fix for redirect
-add_action('init', 'super_maps_do_output_buffer');
-function super_maps_do_output_buffer()
-{
-    ob_start();
+    return CS_VERSION;
 }
 
-// media upload for edit page
-function super_maps_manager_admin_scripts()
-{
-    wp_enqueue_script('media-upload');
-    wp_enqueue_script('thickbox');
-    wp_enqueue_script('jquery');
+function sample_admin_notice__success() {
+
+
+    ?>
+    <div class="notice notice-success is-dismissible">
+        <p><?php echo getVersion(); ?></p>
+
+    </div>
+    <?php
 }
 
-// thickbox for edit page
-function super_maps_manager_admin_styles()
+
+*/
+
+/* Check if codestarframework already exist */
+
+/*
+
+add_action('wp', 'check_framework');
+
+function check_framework()
 {
-    wp_enqueue_style('thickbox');
-}
+    if (!class_exists('CSFramework')) {
 
-// hook media upload
-add_action('admin_print_scripts', 'super_maps_manager_admin_scripts');
-add_action('admin_print_styles', 'super_maps_manager_admin_styles');
+        //framework not exist
+        require_once plugin_dir_path(__FILE__) . 'codestar-framework/cs-framework.php';
 
-
-// hook page for admin menu
-add_action('admin_menu', 'super_maps_page');
-
-function super_maps_page()
-{
-    add_menu_page('SuperMaps', 'SuperMaps', 'manage_options', 'super-maps', 'super_maps_route_page', plugins_url('/super-maps/images/super-maps.png'));
-
-}
-
-// polygon main page
-
-function super_maps_route_page()
-{
-
-    super_maps_header_menu();
-
-    if(!empty($_GET['p'])){
-        $p = $_GET['p'];
     }else{
-        $p = '';
-    }
 
-    switch ($p) {
+        require_once plugin_dir_path(__FILE__) . 'include/exist-framework.php';
 
-        case 'polygon':
-
-            super_maps_polygon_list();
-            super_maps_polygon_style();
-
-            break;
-
-        case 'newPolygon':
-
-            super_maps_polygon_add();
-
-            break;
-
-        case 'editPolygon';
-
-            super_maps_polygon_edit();
-
-            break;
-
-        case 'delPolygon':
-
-            super_maps_polygon_del();
-
-            break;
-
-        case 'newPolygonStyle':
-
-            super_maps_polygon_style_add();
-
-            break;
-
-        case 'editPolygonStyle':
-
-            super_maps_polygon_style_edit();
-
-            break;
-
-        case 'delPolygonStyle':
-
-            super_maps_polygon_style_del();
-
-            break;
-
-        case 'line':
-
-            super_maps_line_list();
-            super_maps_line_style();
-
-            break;
-
-        case 'newLine':
-
-            super_maps_line_add();
-
-            break;
-
-        case 'editLine';
-
-            super_maps_line_edit();
-
-            break;
-
-        case 'delLine':
-
-            super_maps_line_del();
-
-            break;
-
-        case 'newLineStyle':
-
-            super_maps_line_style_add();
-
-            break;
-
-        case 'editLineStyle':
-
-            super_maps_line_style_edit();
-
-            break;
-
-        case 'delLineStyle':
-
-            super_maps_line_style_del();
-
-            break;
-
-        case 'map':
-
-            super_maps_map();
-            super_maps_map_style();
-
-            break;
-
-        case 'newMap':
-
-            super_maps_map_add();
-
-            break;
-
-        case 'editMap':
-
-            super_maps_map_edit();
-
-            break;
-
-        case 'delMap':
-
-            super_maps_map_del();
-
-            break;
-
-        case 'newMapStyle':
-
-            super_maps_map_style_add();
-
-            break;
-
-        case 'editMapStyle':
-
-            super_maps_map_style_edit();
-
-            break;
-
-        case 'delMapStyle':
-
-            super_maps_map_style_del();
-
-            break;
-
-        case 'marker':
-
-            super_maps_marker();
-            super_maps_marker_style();
-
-            break;
-
-        case 'newMarker':
-
-            super_maps_marker_add();
-
-            break;
-
-        case 'editMarker':
-
-            super_maps_marker_edit();
-
-            break;
-
-        case 'delMarker':
-
-            super_maps_marker_del();
-            break;
-
-        case 'newMarkerStyle':
-
-            super_maps_marker_style_add();
-
-            break;
-
-        case 'editMarkerStyle':
-
-            super_maps_marker_style_edit();
-
-            break;
-
-        case 'delMarkerStyle':
-
-            super_maps_marker_style_del();
-            break;
-
-        case 'settings':
-
-            super_maps_settings();
-            break;
-
-        default:
-
-            super_maps();
-            break;
 
     }
 
-
+    add_action( 'admin_notices', 'sample_admin_notice__success' );
 }
 
-// css hook
 
-add_action('admin_head', 'super_maps_css');
+*/
 
-function super_maps_css()
+
+add_action('after_setup_theme', 'check_framework');
+
+function check_framework()
 {
 
-   echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('super-maps/css/style.css') . '">';
+    if (!function_exists('cs_framework_init') && !class_exists('CSFramework')) {
 
+        require_once plugin_dir_path(__FILE__) . 'codestar-framework/cs-framework.php';
+
+    } else {
+
+        require_once plugin_dir_path(__FILE__) . 'include/exist-framework.php';
+    }
 
 }
 
-function super_maps_custom_js() {
+require_once plugin_dir_path(__FILE__) . 'include/exist-framework.php';
 
 
-    echo "<script>
-        if (typeof google != 'object' && typeof google.maps != 'object') {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'http://maps.google.com/maps/api/js?sensor=false';
-        document.body.appendChild(script);
-    }</script>";
+// Shortcode
+include(plugin_dir_path(__FILE__) . 'shortcode/map.php');
 
-
-}
-// Add hook for admin <head></head>
-add_action('admin_head', 'super_maps_custom_js');
-// Add hook for front-end <head></head>
-add_action('wp_head', 'super_maps_custom_js');
-
-
-// Polygon header
-
-function super_maps_header_menu()
-{
-    if(!empty($_GET['p'])) {
-        $p = $_GET['p'];
-    }else{
-        $p ='';
-    }
-
-    $print = "<div class='header-menu'>";
-    $print .= "<ul>";
-    $print .= "<li";
-    if (empty($p)) {
-        $print .= " class='active' ";
-    }
-    $print .= "><a href='admin.php?page=super-maps'><span class='dashicons dashicons-admin-home'></span></a></li>";
-    $print .= "<li";
-    if ($p == 'marker') {
-        $print .= " class='active' ";
-    }
-    $print .= "><a href='admin.php?page=super-maps&p=marker'><span class='dashicons dashicons-location'></span> " . __('Lista markera', 'super-maps') . "</a></li>";
-    $print .= "<li";
-    if ($p == 'line') {
-        $print .= " class='active' ";
-    }
-    $print .= "><a href='admin.php?page=super-maps&p=line'><span class='dashicons dashicons-chart-area'></span> " . __('Lista linija', 'super-maps') . "</a></li>";
-
-    $print .= "<li";
-    if ($p == 'polygon') {
-        $print .= " class='active' ";
-    }
-    $print .= "><a href='admin.php?page=super-maps&p=polygon'><span class='dashicons dashicons-chart-area'></span> " . __('Lista poligona', 'super-maps') . "</a></li>"
-    ;
-    $print .= "<li";
-    if ($p == 'map') {
-        $print .= " class='active' ";
-    }
-
-    $print .= "><a href='admin.php?page=super-maps&p=map'><span class='dashicons dashicons-location-alt'></span> " . __('Mape', 'super-maps') . "</a></li>";
-    $print .= "<li";
-    if ($p == 'settings') {
-        $print .= " class='active' ";
-    }
-    $print .= "><a href='admin.php?page=super-maps&p=settings'><span class='dashicons dashicons-admin-generic'></span> " . __('Podešavanja', 'super-maps') . "</a></li>";
-    $print .= "</ul>";
-    $print .= "</div>";
-
-    echo $print;
-}
-
-function super_maps()
+function super_maps_admin_enqueue()
 {
 
-    $short_code = "[super_maps map='1']";
+    wp_enqueue_style('supermaps-css', plugins_url('/css/css.css'));
 
-    $print = '<div class="super-maps">';
-
-    $print .= '<p>'.__('Shortcode za prikazivanje mape:', 'super-maps').'</p>';
-
-    $print .= '<p>'.__('1 označava ID mape', 'super-maps').'</p>';
-
-    $print .= '<input type="text" value="'.$short_code.'" disabled><br><br>';
+    if(function_exists('cs_get_option')) {
+        $google_api_key = cs_get_option('google_maps_api_key');
+    }
 
 
+    if (!empty($google_api_key)) {
+        wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?key=' . $google_api_key . '&libraries=drawing');
+    } else {
+        wp_enqueue_script('google-maps', 'http://maps.google.com/maps/api/js?sensor=false&libraries=drawing', array(), 1.0);
+    }
 
-    $print .= '</div>';
-
-    echo $print;
-
-
-
+    switch (get_current_screen()->post_type) {
+        case 'supermaps':
+            wp_enqueue_script('supermaps-admin-js', plugins_url('/js/supermaps-admin-map.js', __FILE__));
+            break;
+        case 'supermaps_marker':
+            wp_enqueue_script('supermaps-admin-js', plugins_url('/js/supermaps-admin-map.js', __FILE__));
+            break;
+        case 'supermaps_line':
+            wp_enqueue_script('supermaps-admin-js', plugins_url('/js/supermaps-admin-lines.js', __FILE__));
+            break;
+        case 'supermaps_polygon':
+            wp_enqueue_script('supermaps-admin-js', plugins_url('/js/supermaps-admin-polygon.js', __FILE__));
+            break;
+        case 'supermaps_overlay':
+            wp_enqueue_script('supermaps-admin-js', plugins_url('/js/supermaps-admin-map.js', __FILE__));
+            break;
+    }
 
 
 }
 
-function redirect_js($url){
+add_action('admin_enqueue_scripts', 'super_maps_admin_enqueue');
 
-    echo '<script type="text/javascript">';
-    echo 'window.location.href="'.$url.'";';
-    echo '</script>';
-    echo '<noscript>';
-    echo '<meta http-equiv="refresh" content="0;url='.$url.'" />';
-    echo '</noscript>'; exit;
+function super_maps_enqueue()
+{
+    wp_enqueue_script('google-maps', 'http://maps.google.com/maps/api/js?sensor=false', array(), 1.0);
+}
+
+add_action('wp_enqueue_scripts', 'super_maps_enqueue');
+
+/**
+ *  Create Maps post type
+ */
+
+add_action('init', 'super_maps_create_maps');
+
+function super_maps_create_maps()
+{
+
+    load_plugin_textdomain('super-maps', false, basename(dirname(__FILE__)) . '/languages');
+
+    register_post_type('supermaps',
+        array(
+            'labels' => array(
+                'name' => __('Maps', 'super-maps'),
+                'singular_name' => __('Map', 'super-maps'),
+                'add_new' => __('Add Map', 'super-maps'),
+                'add_new_item' => __('Add Map', 'super-maps'),
+                'edit' => __('Edit', 'super-maps'),
+                'edit_item' => __('Edit Map', 'super-maps'),
+                'new_item' => __('New Map', 'super-maps'),
+                'view' => __('View', 'super-maps'),
+                'view_item' => __('View Map', 'super-maps'),
+                'search_items' => __('Search Map', 'super-maps'),
+                'not_found' => __('No Maps Found', 'super-maps'),
+                'not_found_in_trash' => __('There is no Maps in trash', 'super-maps'),
+                'parent' => __('Parent Map', 'super-maps')
+            ),
+            'description' => __('Maps', 'super-maps'),
+            'public' => true,
+            'menu_position' => 29,
+            'supports' => array('title'),
+            'menu_icon' => 'dashicons-location-alt',
+            'has_archive' => true
+        )
+    );
+
+    register_post_type('supermaps_marker',
+        array(
+            'labels' => array(
+                'name' => __('Markers', 'super-maps'),
+                'singular_name' => __('Marker', 'super-maps'),
+                'add_new' => __('Add Marker', 'super-maps'),
+                'add_new_item' => __('Add Marker', 'super-maps'),
+                'edit' => __('Edit', 'super-maps'),
+                'edit_item' => __('Edit Marker', 'super-maps'),
+                'new_item' => __('New Marker', 'super-maps'),
+                'view' => __('View', 'super-maps'),
+                'view_item' => __('View Marker', 'super-maps'),
+                'search_items' => __('Search Marker', 'super-maps'),
+                'not_found' => __('No Markers Found', 'super-maps'),
+                'not_found_in_trash' => __('There is no Markers in trash', 'super-maps'),
+                'parent' => __('Parent Marker', 'super-maps')
+            ),
+            'description' => __('Markers', 'super-maps'),
+            'public' => true,
+            'show_in_menu' => 'edit.php?post_type=supermaps',
+            'supports' => array('title'),
+            'has_archive' => true
+        )
+    );
+
+    register_post_type('supermaps_line',
+        array(
+            'labels' => array(
+                'name' => __('Lines', 'super-maps'),
+                'singular_name' => __('Lines', 'super-maps'),
+                'add_new' => __('Add Lines', 'super-maps'),
+                'add_new_item' => __('Add Lines', 'super-maps'),
+                'edit' => __('Edit', 'super-maps'),
+                'edit_item' => __('Edit Lines', 'super-maps'),
+                'new_item' => __('New Lines', 'super-maps'),
+                'view' => __('View', 'super-maps'),
+                'view_item' => __('View Lines', 'super-maps'),
+                'search_items' => __('Search Lines', 'super-maps'),
+                'not_found' => __('No Lines Found', 'super-maps'),
+                'not_found_in_trash' => __('There is no Lines in trash', 'super-maps'),
+                'parent' => __('Parent Lines', 'super-maps')
+            ),
+            'description' => __('Lines', 'super-maps'),
+            'public' => true,
+            'show_in_menu' => 'edit.php?post_type=supermaps',
+            'supports' => array('title'),
+            'has_archive' => true
+        )
+    );
+
+    register_post_type('supermaps_polygon',
+        array(
+            'labels' => array(
+                'name' => __('Polygon', 'super-maps'),
+                'singular_name' => __('Polygon', 'super-maps'),
+                'add_new' => __('Add Polygon', 'super-maps'),
+                'add_new_item' => __('Add Polygon', 'super-maps'),
+                'edit' => __('Edit', 'super-maps'),
+                'edit_item' => __('Edit Polygon', 'super-maps'),
+                'new_item' => __('New Polygon', 'super-maps'),
+                'view' => __('View', 'super-maps'),
+                'view_item' => __('View Polygon', 'super-maps'),
+                'search_items' => __('Search Polygon', 'super-maps'),
+                'not_found' => __('No Polygon Found', 'super-maps'),
+                'not_found_in_trash' => __('There is no Polygon in trash', 'super-maps'),
+                'parent' => __('Parent Polygon', 'super-maps')
+            ),
+            'description' => __('Polygon', 'super-maps'),
+            'public' => true,
+            'show_in_menu' => 'edit.php?post_type=supermaps',
+            'supports' => array('title'),
+            'has_archive' => true
+        )
+    );
 
 
+    register_post_type('supermaps_overlay',
+        array(
+            'labels' => array(
+                'name' => __('Overlays', 'super-maps'),
+                'singular_name' => __('Overlay', 'super-maps'),
+                'add_new' => __('Add Overlay', 'super-maps'),
+                'add_new_item' => __('Add Overlay', 'super-maps'),
+                'edit' => __('Edit', 'super-maps'),
+                'edit_item' => __('Edit Overlay', 'super-maps'),
+                'new_item' => __('New Overlay', 'super-maps'),
+                'view' => __('View', 'super-maps'),
+                'view_item' => __('View Overlay', 'super-maps'),
+                'search_items' => __('Search Overlay', 'super-maps'),
+                'not_found' => __('No Overlays Found', 'super-maps'),
+                'not_found_in_trash' => __('There is no Overlays in trash', 'super-maps'),
+                'parent' => __('Parent Overlay', 'super-maps')
+            ),
+            'description' => __('Overlays', 'super-maps'),
+            'public' => true,
+            'show_in_menu' => 'edit.php?post_type=supermaps',
+            'supports' => array('title'),
+            'has_archive' => true
+        )
+    );
+
+
+}
+
+function supermaps_add_shortcode_columns($columns)
+{
+
+    return array_merge($columns,
+        array('shortcode' => __('Shortcode'),
+        ));
+}
+
+add_filter('manage_supermaps_posts_columns', 'supermaps_add_shortcode_columns');
+
+
+add_action('manage_posts_custom_column', 'supermaps_menage_shortcode_columns', 10, 2);
+
+function supermaps_menage_shortcode_columns($column, $post_id)
+{
+    switch ($column) {
+        case 'shortcode':
+            echo "[supermaps map='" . $post_id . "'] ";
+            break;
+    }
 }

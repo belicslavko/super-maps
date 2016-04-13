@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60124985-f7e5-4f03-b155-1397d4dffc8c" name="Default" comment="supermaps 1.6">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/slavko.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/super-maps.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/super-maps-db.php" afterPath="$PROJECT_DIR$/includes/super-maps-db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/super-maps-line.php" afterPath="$PROJECT_DIR$/includes/super-maps-line.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/super-maps-map-style.php" afterPath="$PROJECT_DIR$/includes/super-maps-map-style.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/super-maps-map.php" afterPath="$PROJECT_DIR$/includes/super-maps-map.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/super-maps-marker.php" afterPath="$PROJECT_DIR$/includes/super-maps-marker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/super-maps-polygon.php" afterPath="$PROJECT_DIR$/includes/super-maps-polygon.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/super-maps-shortcode.php" afterPath="$PROJECT_DIR$/includes/super-maps-shortcode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/super-maps.php" afterPath="$PROJECT_DIR$/super-maps.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <ignored path="wp-locations.iws" />
+    <list default="true" id="b9fcfe4e-74c1-4d93-a472-1de6c2ae087a" name="Default" comment="" />
+    <ignored path="SuperMaps.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
-    <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,293 +16,174 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="wp-locations" />
+    <favorites_list name="SuperMaps" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="super-maps.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/super-maps.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625" vertical-offset="4635" max-vertical-offset="6570">
-              <caret line="334" column="50" selection-start-line="334" selection-start-column="50" selection-end-line="334" selection-end-column="50" />
+            <state relative-caret-position="375">
+              <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
               <folding>
-                <element signature="e#6#248#0#PHP" expanded="true" />
-                <marker date="1418308827142" expanded="true" signature="6247:6548" placeholder="..." />
-                <marker date="1418308827142" expanded="true" signature="6322:6540" placeholder="{...}" />
+                <element signature="e#6#186#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="super-maps-db.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/super-maps-db.php">
+      <file leaf-file-name="cs-framework.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codestar-framework/cs-framework.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="2415">
-              <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
-              <folding>
-                <marker date="1418051773275" expanded="true" signature="125:146" placeholder="DROP TABLE I..." />
-                <marker date="1418051773275" expanded="true" signature="192:213" placeholder="DROP TABLE I..." />
-                <marker date="1418051773275" expanded="true" signature="256:277" placeholder="DROP TABLE I..." />
-                <marker date="1418051773275" expanded="true" signature="319:340" placeholder="DROP TABLE I..." />
-                <marker date="1418051773275" expanded="true" signature="385:406" placeholder="DROP TABLE I..." />
-                <marker date="1418051773275" expanded="true" signature="458:479" placeholder="DROP TABLE I..." />
-                <marker date="1418051773275" expanded="true" signature="530:551" placeholder="DROP TABLE I..." />
-                <marker date="1418051773275" expanded="true" signature="599:620" placeholder="DROP TABLE I..." />
-                <marker date="1418051773275" expanded="true" signature="990:1329" placeholder="CREATE TABLE..IF..." />
-                <marker date="1418051773275" expanded="true" signature="1378:1706" placeholder="CREATE TABLE..IF..." />
-                <marker date="1418051773275" expanded="true" signature="1746:2082" placeholder="CREATE TABLE..IF..." />
-                <marker date="1418051773275" expanded="true" signature="2128:2453" placeholder="CREATE TABLE..IF..." />
-                <marker date="1418051773275" expanded="true" signature="2493:2997" placeholder="CREATE TABLE..IF..." />
-                <marker date="1418051773275" expanded="true" signature="3043:3286" placeholder="CREATE TABLE..." />
-                <marker date="1418051773275" expanded="true" signature="3328:3726" placeholder="CREATE TABLE..IF..." />
-                <marker date="1418051773275" expanded="true" signature="3774:3948" placeholder="CREATE TABLE..IF..." />
-              </folding>
+            <state relative-caret-position="261">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="44" selection-end-column="83" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="super-maps-map-style.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/super-maps-map-style.php">
+      <file leaf-file-name="cs-framework-path.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codestar-framework/cs-framework-path.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2115" max-vertical-offset="3120">
-              <caret line="149" column="66" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
-              <folding>
-                <marker date="1416831557839" expanded="true" signature="564:578" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-                <marker date="1416831557839" expanded="true" signature="1226:1745" placeholder="..." />
-                <marker date="1416831557839" expanded="true" signature="1274:1722" placeholder="{...}" />
-                <marker date="1416831557839" expanded="true" signature="1336:1510" placeholder="{...}" />
-                <marker date="1416831557839" expanded="true" signature="1565:1707" placeholder="{...}" />
-                <marker date="1416831557839" expanded="true" signature="3380:3432" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-                <marker date="1416831557839" expanded="true" signature="3484:4003" placeholder="..." />
-                <marker date="1416831557839" expanded="true" signature="3532:3980" placeholder="{...}" />
-                <marker date="1416831557839" expanded="true" signature="3594:3768" placeholder="{...}" />
-                <marker date="1416831557839" expanded="true" signature="3823:3965" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="super-maps-line-style.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/super-maps-line-style.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2364" max-vertical-offset="3225">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1416822941903" expanded="true" signature="572:586" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_LINE..." />
-                <marker date="1416822941903" expanded="true" signature="1239:1758" placeholder="..." />
-                <marker date="1416822941903" expanded="true" signature="1287:1735" placeholder="{...}" />
-                <marker date="1416822941903" expanded="true" signature="1349:1523" placeholder="{...}" />
-                <marker date="1416822941903" expanded="true" signature="1578:1720" placeholder="{...}" />
-                <marker date="1416822941903" expanded="true" signature="3480:3533" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_LINE..." />
-                <marker date="1416822941903" expanded="true" signature="3585:4104" placeholder="..." />
-                <marker date="1416822941903" expanded="true" signature="3633:4081" placeholder="{...}" />
-                <marker date="1416822941903" expanded="true" signature="3695:3869" placeholder="{...}" />
-                <marker date="1416822941903" expanded="true" signature="3924:4066" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="super-maps-polygon.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/super-maps-polygon.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2734" max-vertical-offset="4380">
-              <caret line="245" column="9" selection-start-line="241" selection-start-column="8" selection-end-line="245" selection-end-column="9" />
-              <folding>
-                <marker date="1416913493899" expanded="true" signature="813:827" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-                <marker date="1416913493899" expanded="true" signature="934:994" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-                <marker date="1416913493899" expanded="true" signature="1057:1107" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-                <marker date="1416913493899" expanded="true" signature="2312:2326" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-                <marker date="1416913493899" expanded="true" signature="2389:2403" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-                <marker date="1416913493899" expanded="true" signature="5040:5054" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-                <marker date="1416913493899" expanded="true" signature="5114:5166" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-                <marker date="1416913493899" expanded="true" signature="5205:5219" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="super-maps-shortcode.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/super-maps-shortcode.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="4440">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-              <folding>
-                <marker date="1418053883033" expanded="true" signature="204:251" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-                <marker date="1418053883033" expanded="true" signature="292:345" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-                <marker date="1418053883033" expanded="true" signature="461:513" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-                <marker date="1418053883033" expanded="true" signature="554:605" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-                <marker date="1418053883033" expanded="true" signature="646:695" placeholder="SELECT * FRO..SUPERMAPS_DB_LINE..." />
-                <marker date="1418053883033" expanded="true" signature="843:1206" placeholder="..." />
-                <marker date="1418053883033" expanded="true" signature="843:1304" placeholder="..." />
-                <marker date="1418053883033" expanded="true" signature="944:1195" placeholder="{...}" />
-                <marker date="1418053883033" expanded="true" signature="972:991" placeholder="{...}" />
-                <marker date="1418053883033" expanded="true" signature="972:1195" placeholder="{...}" />
-                <marker date="1418053883033" expanded="true" signature="1636:1693" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-                <marker date="1418053883033" expanded="true" signature="3018:3072" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_LINE..." />
-                <marker date="1418053883033" expanded="true" signature="4272:4328" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="super-maps-map.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/super-maps-map.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3859" max-vertical-offset="6180">
-              <caret line="262" column="22" selection-start-line="262" selection-start-column="22" selection-end-line="262" selection-end-column="22" />
-              <folding>
-                <marker date="1418054540584" expanded="true" signature="708:722" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-                <marker date="1418054540584" expanded="true" signature="826:879" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-                <marker date="1418054540584" expanded="true" signature="1882:1896" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-                <marker date="1418054540584" expanded="true" signature="1977:2496" placeholder="..." />
-                <marker date="1418054540584" expanded="true" signature="2025:2473" placeholder="{...}" />
-                <marker date="1418054540584" expanded="true" signature="2087:2261" placeholder="{...}" />
-                <marker date="1418054540584" expanded="true" signature="2316:2458" placeholder="{...}" />
-                <marker date="1418054540584" expanded="true" signature="4338:4560" placeholder="..." />
-                <marker date="1418054540584" expanded="true" signature="4461:4553" placeholder="..." />
-                <marker date="1418054540584" expanded="true" signature="6445:6459" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-                <marker date="1418054540584" expanded="true" signature="6524:6570" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-                <marker date="1418054540584" expanded="true" signature="6622:7141" placeholder="..." />
-                <marker date="1418054540584" expanded="true" signature="6670:7118" placeholder="{...}" />
-                <marker date="1418054540584" expanded="true" signature="6732:6906" placeholder="{...}" />
-                <marker date="1418054540584" expanded="true" signature="6961:7103" placeholder="{...}" />
-                <marker date="1418054540584" expanded="true" signature="9967:10207" placeholder="..." />
-                <marker date="1418054540584" expanded="true" signature="10090:10196" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="super-maps-polygon-style.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/super-maps-polygon-style.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2629" max-vertical-offset="3465">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1416822941415" expanded="true" signature="579:593" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-                <marker date="1416822941415" expanded="true" signature="1258:1777" placeholder="..." />
-                <marker date="1416822941415" expanded="true" signature="1306:1754" placeholder="{...}" />
-                <marker date="1416822941415" expanded="true" signature="1368:1542" placeholder="{...}" />
-                <marker date="1416822941415" expanded="true" signature="1597:1739" placeholder="{...}" />
-                <marker date="1416822941415" expanded="true" signature="4056:4112" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-                <marker date="1416822941415" expanded="true" signature="4164:4683" placeholder="..." />
-                <marker date="1416822941415" expanded="true" signature="4212:4660" placeholder="{...}" />
-                <marker date="1416822941415" expanded="true" signature="4274:4448" placeholder="{...}" />
-                <marker date="1416822941415" expanded="true" signature="4503:4645" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="super-maps-settings.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/super-maps-settings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state relative-caret-position="-675">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="super-maps-marker.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/super-maps-marker.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codestar-framework/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19258372" vertical-offset="3289" max-vertical-offset="5160">
-              <caret line="230" column="23" selection-start-line="230" selection-start-column="23" selection-end-line="230" selection-end-column="23" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exist-framework.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/exist-framework.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
               <folding>
-                <marker date="1418309924735" expanded="true" signature="774:788" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-                <marker date="1418309924735" expanded="true" signature="894:950" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-                <marker date="1418309924735" expanded="true" signature="1012:1058" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-                <marker date="1418309924735" expanded="true" signature="2231:2245" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-                <marker date="1418309924735" expanded="true" signature="2306:2320" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-                <marker date="1418309924735" expanded="true" signature="2385:2904" placeholder="..." />
-                <marker date="1418309924735" expanded="true" signature="2433:2881" placeholder="{...}" />
-                <marker date="1418309924735" expanded="true" signature="2495:2669" placeholder="{...}" />
-                <marker date="1418309924735" expanded="true" signature="2724:2866" placeholder="{...}" />
-                <marker date="1418309924735" expanded="true" signature="4441:4663" placeholder="..." />
-                <marker date="1418309924735" expanded="true" signature="4564:4656" placeholder="..." />
-                <marker date="1418309924735" expanded="true" signature="5829:5879" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-                <marker date="1418309924735" expanded="true" signature="5920:5934" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-                <marker date="1418309924735" expanded="true" signature="5996:6010" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-                <marker date="1418309924735" expanded="true" signature="6076:6595" placeholder="..." />
-                <marker date="1418309924735" expanded="true" signature="6124:6572" placeholder="{...}" />
-                <marker date="1418309924735" expanded="true" signature="6186:6360" placeholder="{...}" />
-                <marker date="1418309924735" expanded="true" signature="6415:6557" placeholder="{...}" />
-                <marker date="1418309924735" expanded="true" signature="8767:9010" placeholder="..." />
-                <marker date="1418309924735" expanded="true" signature="8890:8999" placeholder="..." />
+                <element signature="e#7566#9885#0#PHP" expanded="false" />
+                <element signature="e#10041#12703#0#PHP" expanded="false" />
+                <element signature="e#12863#15934#0#PHP" expanded="false" />
+                <element signature="e#16091#18404#0#PHP" expanded="false" />
+                <marker date="1460551786341" expanded="true" signature="5171:5197" placeholder="..." />
+                <marker date="1460551786341" expanded="true" signature="9355:9381" placeholder="..." />
+                <marker date="1460551786341" expanded="true" signature="11618:11644" placeholder="..." />
+                <marker date="1460551786341" expanded="true" signature="14452:14478" placeholder="..." />
+                <marker date="1460551786341" expanded="true" signature="17884:17910" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="framework.config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codestar-framework/config/framework.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customize.config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codestar-framework/config/customize.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="462" column="44" selection-start-line="1" selection-start-column="0" selection-end-line="462" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="metabox.config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codestar-framework/config/metabox.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shortcode.config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codestar-framework/config/shortcode.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="476" column="0" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="taxonomy.config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codestar-framework/config/taxonomy.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FindManager">
-    <FindUsagesManager>
-      <setting name="OPEN_NEW_TAB" value="false" />
-    </FindUsagesManager>
-  </component>
-  <component name="FrameworkCommandLineHistory">
-    <commandsHistory>
-      <command text="git rm --cached .idea/*" />
-      <command text=" git status" />
-      <command text="dir" />
-      <command text="cd .idea/" />
-      <command text="cat .gitignore" />
-      <command text="cd .." />
-      <command text=".idea/ .gitignore" />
-      <command text="sudo .idea/ .gitignore" />
-      <command text="git diff" />
-      <command text="git commit" />
-    </commandsHistory>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <option value="$PROJECT_DIR$/wp-location-map.php" />
-        <option value="$PROJECT_DIR$/wp-locations.php" />
-        <option value="$PROJECT_DIR$/js/polygon.min.js" />
-        <option value="$PROJECT_DIR$/wp-polygon-shortcode.php" />
-        <option value="$PROJECT_DIR$/wp-polygon-category.php" />
-        <option value="$PROJECT_DIR$/wp-polygon-map.php" />
-        <option value="$PROJECT_DIR$/wp-polygon-settings.php" />
-        <option value="$PROJECT_DIR$/wp-polygon-marker.php" />
-        <option value="$PROJECT_DIR$/wp-polygon-db.php" />
-        <option value="$PROJECT_DIR$/wp-polygon.php" />
-        <option value="$PROJECT_DIR$/super-maps-db.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/includes/super-maps-google-map.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-polygon-style.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-marker-style.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-settings.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-map-style.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-line.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-polygon.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-db.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-shortcode.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-map.php" />
-        <option value="$PROJECT_DIR$/super-maps.php" />
-        <option value="$PROJECT_DIR$/includes/super-maps-marker.php" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/codestar-framework/fields/map/map.php" />
+        <option value="$PROJECT_DIR$/codestar-framework/functions/enqueue.php" />
+        <option value="$PROJECT_DIR$/codestar-framework/assets/js/extended-cs-framework.js" />
+        <option value="$PROJECT_DIR$/codestar-framework/fields/map/line.php" />
+        <option value="$PROJECT_DIR$/codestar-framework/config/metabox.extra.php" />
+        <option value="$PROJECT_DIR$/js/admin.js" />
+        <option value="$PROJECT_DIR$/js/supermaps-admin.js" />
+        <option value="$PROJECT_DIR$/js/supermaps-admin2.js" />
+        <option value="$PROJECT_DIR$/js/supermaps-admin-map.js" />
+        <option value="$PROJECT_DIR$/js/supermaps-admin-lines.js" />
+        <option value="$PROJECT_DIR$/shortcode/map.php" />
+        <option value="$PROJECT_DIR$/codestar-framework/classes/framework.class.php" />
+        <option value="$PROJECT_DIR$/include/exist-framework.php" />
+        <option value="$PROJECT_DIR$/codestar-framework/config/framework.config.php" />
+        <option value="$PROJECT_DIR$/codestar-framework/config/shortcode.config.php" />
+        <option value="$PROJECT_DIR$/codestar-framework/config/customize.config.php" />
+        <option value="$PROJECT_DIR$/codestar-framework/config/taxonomy.config.php" />
+        <option value="$PROJECT_DIR$/super-maps.php" />
+        <option value="$PROJECT_DIR$/codestar-framework/config/metabox.config.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="24" />
-    <option name="width" value="1629" />
-    <option name="height" value="1026" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1615" />
+    <option name="height" value="1054" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -331,9 +193,6 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -342,181 +201,168 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource ProjectPane="false" />
+      <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="super-maps" />
+              <option name="myItemId" value="SuperMaps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="super-maps" />
+              <option name="myItemId" value="SuperMaps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="super-maps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="SuperMaps" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="super-maps" />
+              <option name="myItemId" value="SuperMaps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="super-maps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="SuperMaps" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperMaps" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
-    <property name="options.splitter.main.proportions" value="0.30254236" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
-    <property name="FullScreen" value="false" />
-    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
-    <property name="SearchEverywhereHistory" value="" />
-    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="51" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="63" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="66" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="603" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="51" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="63" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="66" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="603" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/codestar-framework" />
       <recent name="$PROJECT_DIR$/js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/includes" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/codestar-framework/assets/js" />
     </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
-      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <arguments />
       <envs />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" myUseAcceleration="nothing">
-    <configuration useDefault="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="60124985-f7e5-4f03-b155-1397d4dffc8c" name="Default" comment="" />
-      <created>1409652326708</created>
+      <changelist id="b9fcfe4e-74c1-4d93-a472-1de6c2ae087a" name="Default" comment="" />
+      <created>1458638868516</created>
       <option name="number" value="Default" />
-      <updated>1409652326708</updated>
+      <option name="presentableId" value="Default" />
+      <updated>1458638868516</updated>
+      <workItem from="1459151743847" duration="3240000" />
+      <workItem from="1459160642825" duration="698000" />
+      <workItem from="1460366688230" duration="17496000" />
+      <workItem from="1460446872005" duration="61000" />
+      <workItem from="1460446950793" duration="14092000" />
+      <workItem from="1460465597740" duration="3245000" />
+      <workItem from="1460471740735" duration="2333000" />
+      <workItem from="1460533566183" duration="603000" />
+      <workItem from="1460535765597" duration="3392000" />
+      <workItem from="1460547364199" duration="8297000" />
     </task>
-    <task id="LOCAL-00001" summary="supermaps first git">
-      <created>1416823273987</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1416823273987</updated>
-    </task>
-    <task id="LOCAL-00002" summary="supermaps 1.6">
-      <created>1416824774587</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1416824774587</updated>
-    </task>
-    <task id="LOCAL-00003" summary="supermaps 1.6">
-      <created>1416825004504</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1416825004504</updated>
-    </task>
-    <task id="LOCAL-00004" summary="supermaps 1.6">
-      <created>1416825100622</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1416825100622</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="53457000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="24" width="1629" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="1615" height="1054" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35420504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.50030696" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.49969307" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.49969307" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32948583" sideWeight="0.49969307" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.49969307" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3212237" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5022307" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33870968" sideWeight="0.4850223" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.49776927" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -530,618 +376,236 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
-    <MESSAGE value="supermaps first git" />
-    <MESSAGE value="supermaps 1.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="supermaps 1.6" />
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-polygon.php">
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/config/metabox.config.php" />
+    <entry file="file://$PROJECT_DIR$/shortcode/map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1416913493899" expanded="true" signature="813:827" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="934:994" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="1057:1107" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1416913493899" expanded="true" signature="2312:2326" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="2389:2403" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1416913493899" expanded="true" signature="5040:5054" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="5114:5166" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="5205:5219" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-marker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1418309924735" expanded="true" signature="774:788" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="894:950" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="1012:1058" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418309924735" expanded="true" signature="2231:2245" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="2306:2320" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418309924735" expanded="true" signature="2385:2904" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="2433:2881" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="2495:2669" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="2724:2866" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="4441:4663" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="4564:4656" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="5829:5879" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="5920:5934" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="5996:6010" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418309924735" expanded="true" signature="6076:6595" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="6124:6572" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="6186:6360" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="6415:6557" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="8767:9010" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="8890:8999" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-shortcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1418053883033" expanded="true" signature="204:251" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418053883033" expanded="true" signature="292:345" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-            <marker date="1418053883033" expanded="true" signature="461:513" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1418053883033" expanded="true" signature="554:605" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-            <marker date="1418053883033" expanded="true" signature="646:695" placeholder="SELECT * FRO..SUPERMAPS_DB_LINE..." />
-            <marker date="1418053883033" expanded="true" signature="843:1206" placeholder="..." />
-            <marker date="1418053883033" expanded="true" signature="843:1304" placeholder="..." />
-            <marker date="1418053883033" expanded="true" signature="944:1195" placeholder="{...}" />
-            <marker date="1418053883033" expanded="true" signature="972:991" placeholder="{...}" />
-            <marker date="1418053883033" expanded="true" signature="972:1195" placeholder="{...}" />
-            <marker date="1418053883033" expanded="true" signature="1636:1693" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1418053883033" expanded="true" signature="3018:3072" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_LINE..." />
-            <marker date="1418053883033" expanded="true" signature="4272:4328" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/super-maps.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
           <folding>
-            <element signature="e#6#248#0#PHP" expanded="true" />
-            <marker date="1418308827142" expanded="true" signature="6247:6548" placeholder="..." />
-            <marker date="1418308827142" expanded="true" signature="6322:6540" placeholder="{...}" />
+            <element signature="e#6#186#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-marker-style.php">
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/config/metabox.config.php" />
+    <entry file="file://$PROJECT_DIR$/shortcode/map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-polygon-style.php">
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/assets/js/vendor/chosen.jquery.js" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/config/shortcode.config.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/config/taxonomy.config.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/config/framework.config.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/classes/metabox.class.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/fields/content/content.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/config/customize.config.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/fields/image_select/image_select.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/fields/text/text.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/fields/color_picker/color_picker.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/assets/js/cs-framework.js" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/assets/js/cs-plugins.js" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/index.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/classes/framework.class.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/fields/map/map.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/fields/icon/icon.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/cs-framework-path.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/config/metabox.extra.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/cs-framework.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/fields/map/line.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/assets/js/extended-cs-framework.js" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/functions/enqueue.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/assets/js/polygon.min.js" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/config/metabox.config.php" />
+    <entry file="file://$PROJECT_DIR$/codestar-framework_back/assets/js/line.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/line.min.js" />
+    <entry file="file://$PROJECT_DIR$/shortcode/map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="951">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-polygon.php">
+    <entry file="file://$PROJECT_DIR$/js/supermaps-admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1416913493899" expanded="true" signature="813:827" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="934:994" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="1057:1107" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1416913493899" expanded="true" signature="2312:2326" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="2389:2403" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1416913493899" expanded="true" signature="5040:5054" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="5114:5166" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="5205:5219" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-          </folding>
+        <state relative-caret-position="307">
+          <caret line="236" column="12" selection-start-line="236" selection-start-column="12" selection-end-line="236" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-settings.php">
+    <entry file="file://$PROJECT_DIR$/js/supermaps-admin-map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="44">
+          <caret line="102" column="0" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-shortcode.php">
+    <entry file="file://$PROJECT_DIR$/js/supermaps-admin-polygon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1418053883033" expanded="true" signature="204:251" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418053883033" expanded="true" signature="292:345" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-            <marker date="1418053883033" expanded="true" signature="461:513" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1418053883033" expanded="true" signature="554:605" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-            <marker date="1418053883033" expanded="true" signature="646:695" placeholder="SELECT * FRO..SUPERMAPS_DB_LINE..." />
-            <marker date="1418053883033" expanded="true" signature="843:1206" placeholder="..." />
-            <marker date="1418053883033" expanded="true" signature="843:1304" placeholder="..." />
-            <marker date="1418053883033" expanded="true" signature="944:1195" placeholder="{...}" />
-            <marker date="1418053883033" expanded="true" signature="972:991" placeholder="{...}" />
-            <marker date="1418053883033" expanded="true" signature="972:1195" placeholder="{...}" />
-            <marker date="1418053883033" expanded="true" signature="1636:1693" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1418053883033" expanded="true" signature="3018:3072" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_LINE..." />
-            <marker date="1418053883033" expanded="true" signature="4272:4328" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-marker.php">
+    <entry file="file://$PROJECT_DIR$/js/supermaps-admin-lines.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1418309924735" expanded="true" signature="774:788" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="894:950" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="1012:1058" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418309924735" expanded="true" signature="2231:2245" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="2306:2320" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418309924735" expanded="true" signature="2385:2904" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="2433:2881" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="2495:2669" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="2724:2866" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="4441:4663" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="4564:4656" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="5829:5879" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="5920:5934" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="5996:6010" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418309924735" expanded="true" signature="6076:6595" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="6124:6572" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="6186:6360" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="6415:6557" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="8767:9010" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="8890:8999" placeholder="..." />
-          </folding>
+        <state relative-caret-position="3375">
+          <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-google-map.php">
+    <entry file="file://$PROJECT_DIR$/css/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uninstall.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/super-maps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#248#0#PHP" expanded="true" />
-            <marker date="1418308827142" expanded="true" signature="6247:6548" placeholder="..." />
-            <marker date="1418308827142" expanded="true" signature="6322:6540" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-map.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-polygon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1416913493899" expanded="true" signature="813:827" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="934:994" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="1057:1107" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1416913493899" expanded="true" signature="2312:2326" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="2389:2403" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1416913493899" expanded="true" signature="5040:5054" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="5114:5166" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="5205:5219" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/polygon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uninstall.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-google-map.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="202.5" vertical-offset="4860" max-vertical-offset="9465">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-line.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="4620">
-          <caret line="139" column="9" selection-start-line="131" selection-start-column="8" selection-end-line="139" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-marker-style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2970">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-line-style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2364" max-vertical-offset="3225">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1416822941903" expanded="true" signature="572:586" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_LINE..." />
-            <marker date="1416822941903" expanded="true" signature="1239:1758" placeholder="..." />
-            <marker date="1416822941903" expanded="true" signature="1287:1735" placeholder="{...}" />
-            <marker date="1416822941903" expanded="true" signature="1349:1523" placeholder="{...}" />
-            <marker date="1416822941903" expanded="true" signature="1578:1720" placeholder="{...}" />
-            <marker date="1416822941903" expanded="true" signature="3480:3533" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_LINE..." />
-            <marker date="1416822941903" expanded="true" signature="3585:4104" placeholder="..." />
-            <marker date="1416822941903" expanded="true" signature="3633:4081" placeholder="{...}" />
-            <marker date="1416822941903" expanded="true" signature="3695:3869" placeholder="{...}" />
-            <marker date="1416822941903" expanded="true" signature="3924:4066" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-map-style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2115" max-vertical-offset="3120">
-          <caret line="149" column="66" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
-          <folding>
-            <marker date="1416831557839" expanded="true" signature="564:578" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-            <marker date="1416831557839" expanded="true" signature="1226:1745" placeholder="..." />
-            <marker date="1416831557839" expanded="true" signature="1274:1722" placeholder="{...}" />
-            <marker date="1416831557839" expanded="true" signature="1336:1510" placeholder="{...}" />
-            <marker date="1416831557839" expanded="true" signature="1565:1707" placeholder="{...}" />
-            <marker date="1416831557839" expanded="true" signature="3380:3432" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-            <marker date="1416831557839" expanded="true" signature="3484:4003" placeholder="..." />
-            <marker date="1416831557839" expanded="true" signature="3532:3980" placeholder="{...}" />
-            <marker date="1416831557839" expanded="true" signature="3594:3768" placeholder="{...}" />
-            <marker date="1416831557839" expanded="true" signature="3823:3965" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-polygon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2734" max-vertical-offset="4380">
-          <caret line="245" column="9" selection-start-line="241" selection-start-column="8" selection-end-line="245" selection-end-column="9" />
-          <folding>
-            <marker date="1416913493899" expanded="true" signature="813:827" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="934:994" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="1057:1107" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1416913493899" expanded="true" signature="2312:2326" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="2389:2403" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1416913493899" expanded="true" signature="5040:5054" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="5114:5166" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1416913493899" expanded="true" signature="5205:5219" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-polygon-style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2629" max-vertical-offset="3465">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1416822941415" expanded="true" signature="579:593" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416822941415" expanded="true" signature="1258:1777" placeholder="..." />
-            <marker date="1416822941415" expanded="true" signature="1306:1754" placeholder="{...}" />
-            <marker date="1416822941415" expanded="true" signature="1368:1542" placeholder="{...}" />
-            <marker date="1416822941415" expanded="true" signature="1597:1739" placeholder="{...}" />
-            <marker date="1416822941415" expanded="true" signature="4056:4112" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1416822941415" expanded="true" signature="4164:4683" placeholder="..." />
-            <marker date="1416822941415" expanded="true" signature="4212:4660" placeholder="{...}" />
-            <marker date="1416822941415" expanded="true" signature="4274:4448" placeholder="{...}" />
-            <marker date="1416822941415" expanded="true" signature="4503:4645" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="270">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-db.php">
+    <entry file="file://$PROJECT_DIR$/codestar-framework/functions/actions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="2415">
-          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+        <state relative-caret-position="135">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codestar-framework/classes/metabox.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codestar-framework/classes/framework.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6450">
+          <caret line="430" column="0" selection-start-line="430" selection-start-column="0" selection-end-line="430" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codestar-framework/assets/js/vendor/chosen.jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1418051773275" expanded="true" signature="125:146" placeholder="DROP TABLE I..." />
-            <marker date="1418051773275" expanded="true" signature="192:213" placeholder="DROP TABLE I..." />
-            <marker date="1418051773275" expanded="true" signature="256:277" placeholder="DROP TABLE I..." />
-            <marker date="1418051773275" expanded="true" signature="319:340" placeholder="DROP TABLE I..." />
-            <marker date="1418051773275" expanded="true" signature="385:406" placeholder="DROP TABLE I..." />
-            <marker date="1418051773275" expanded="true" signature="458:479" placeholder="DROP TABLE I..." />
-            <marker date="1418051773275" expanded="true" signature="530:551" placeholder="DROP TABLE I..." />
-            <marker date="1418051773275" expanded="true" signature="599:620" placeholder="DROP TABLE I..." />
-            <marker date="1418051773275" expanded="true" signature="990:1329" placeholder="CREATE TABLE..IF..." />
-            <marker date="1418051773275" expanded="true" signature="1378:1706" placeholder="CREATE TABLE..IF..." />
-            <marker date="1418051773275" expanded="true" signature="1746:2082" placeholder="CREATE TABLE..IF..." />
-            <marker date="1418051773275" expanded="true" signature="2128:2453" placeholder="CREATE TABLE..IF..." />
-            <marker date="1418051773275" expanded="true" signature="2493:2997" placeholder="CREATE TABLE..IF..." />
-            <marker date="1418051773275" expanded="true" signature="3043:3286" placeholder="CREATE TABLE..." />
-            <marker date="1418051773275" expanded="true" signature="3328:3726" placeholder="CREATE TABLE..IF..." />
-            <marker date="1418051773275" expanded="true" signature="3774:3948" placeholder="CREATE TABLE..IF..." />
+            <marker date="1460550661000" expanded="true" signature="20805:20816" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-shortcode.php">
+    <entry file="file://$PROJECT_DIR$/codestar-framework/config/shortcode.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="4440">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding>
-            <marker date="1418053883033" expanded="true" signature="204:251" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418053883033" expanded="true" signature="292:345" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-            <marker date="1418053883033" expanded="true" signature="461:513" placeholder="SELECT * FRO..SUPERMAPS_DB_POLYGON..." />
-            <marker date="1418053883033" expanded="true" signature="554:605" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-            <marker date="1418053883033" expanded="true" signature="646:695" placeholder="SELECT * FRO..SUPERMAPS_DB_LINE..." />
-            <marker date="1418053883033" expanded="true" signature="843:1206" placeholder="..." />
-            <marker date="1418053883033" expanded="true" signature="843:1304" placeholder="..." />
-            <marker date="1418053883033" expanded="true" signature="944:1195" placeholder="{...}" />
-            <marker date="1418053883033" expanded="true" signature="972:991" placeholder="{...}" />
-            <marker date="1418053883033" expanded="true" signature="972:1195" placeholder="{...}" />
-            <marker date="1418053883033" expanded="true" signature="1636:1693" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_POLYGON..." />
-            <marker date="1418053883033" expanded="true" signature="3018:3072" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_LINE..." />
-            <marker date="1418053883033" expanded="true" signature="4272:4328" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="476" column="0" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-map.php">
+    <entry file="file://$PROJECT_DIR$/codestar-framework/config/taxonomy.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3859" max-vertical-offset="6180">
-          <caret line="262" column="22" selection-start-line="262" selection-start-column="22" selection-end-line="262" selection-end-column="22" />
-          <folding>
-            <marker date="1418054540584" expanded="true" signature="708:722" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418054540584" expanded="true" signature="826:879" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-            <marker date="1418054540584" expanded="true" signature="1882:1896" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-            <marker date="1418054540584" expanded="true" signature="1977:2496" placeholder="..." />
-            <marker date="1418054540584" expanded="true" signature="2025:2473" placeholder="{...}" />
-            <marker date="1418054540584" expanded="true" signature="2087:2261" placeholder="{...}" />
-            <marker date="1418054540584" expanded="true" signature="2316:2458" placeholder="{...}" />
-            <marker date="1418054540584" expanded="true" signature="4338:4560" placeholder="..." />
-            <marker date="1418054540584" expanded="true" signature="4461:4553" placeholder="..." />
-            <marker date="1418054540584" expanded="true" signature="6445:6459" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MAP..." />
-            <marker date="1418054540584" expanded="true" signature="6524:6570" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418054540584" expanded="true" signature="6622:7141" placeholder="..." />
-            <marker date="1418054540584" expanded="true" signature="6670:7118" placeholder="{...}" />
-            <marker date="1418054540584" expanded="true" signature="6732:6906" placeholder="{...}" />
-            <marker date="1418054540584" expanded="true" signature="6961:7103" placeholder="{...}" />
-            <marker date="1418054540584" expanded="true" signature="9967:10207" placeholder="..." />
-            <marker date="1418054540584" expanded="true" signature="10090:10196" placeholder="..." />
-          </folding>
+        <state relative-caret-position="381">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codestar-framework/config/customize.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="462" column="44" selection-start-line="1" selection-start-column="0" selection-end-line="462" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codestar-framework/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codestar-framework/cs-framework-path.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/super-maps.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625" vertical-offset="4635" max-vertical-offset="6570">
-          <caret line="334" column="50" selection-start-line="334" selection-start-column="50" selection-end-line="334" selection-end-column="50" />
+        <state relative-caret-position="375">
+          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
           <folding>
-            <element signature="e#6#248#0#PHP" expanded="true" />
-            <marker date="1418308827142" expanded="true" signature="6247:6548" placeholder="..." />
-            <marker date="1418308827142" expanded="true" signature="6322:6540" placeholder="{...}" />
+            <element signature="e#6#186#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/super-maps-marker.php">
+    <entry file="file://$PROJECT_DIR$/codestar-framework/cs-framework.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19258372" vertical-offset="3289" max-vertical-offset="5160">
-          <caret line="230" column="23" selection-start-line="230" selection-start-column="23" selection-end-line="230" selection-end-column="23" />
+        <state relative-caret-position="261">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="44" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/exist-framework.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
           <folding>
-            <marker date="1418309924735" expanded="true" signature="774:788" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="894:950" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="1012:1058" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418309924735" expanded="true" signature="2231:2245" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="2306:2320" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418309924735" expanded="true" signature="2385:2904" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="2433:2881" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="2495:2669" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="2724:2866" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="4441:4663" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="4564:4656" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="5829:5879" placeholder="SELECT * FRO..SUPERMAPS_DB_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="5920:5934" placeholder="SELECT * FRO..SUPERMAPS_DB_STYLE_MARKER..." />
-            <marker date="1418309924735" expanded="true" signature="5996:6010" placeholder="SELECT * FRO..SUPERMAPS_DB_MAP..." />
-            <marker date="1418309924735" expanded="true" signature="6076:6595" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="6124:6572" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="6186:6360" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="6415:6557" placeholder="{...}" />
-            <marker date="1418309924735" expanded="true" signature="8767:9010" placeholder="..." />
-            <marker date="1418309924735" expanded="true" signature="8890:8999" placeholder="..." />
+            <element signature="e#7566#9885#0#PHP" expanded="false" />
+            <element signature="e#10041#12703#0#PHP" expanded="false" />
+            <element signature="e#12863#15934#0#PHP" expanded="false" />
+            <element signature="e#16091#18404#0#PHP" expanded="false" />
+            <marker date="1460551786341" expanded="true" signature="5171:5197" placeholder="..." />
+            <marker date="1460551786341" expanded="true" signature="9355:9381" placeholder="..." />
+            <marker date="1460551786341" expanded="true" signature="11618:11644" placeholder="..." />
+            <marker date="1460551786341" expanded="true" signature="14452:14478" placeholder="..." />
+            <marker date="1460551786341" expanded="true" signature="17884:17910" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codestar-framework/config/framework.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codestar-framework/config/metabox.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-

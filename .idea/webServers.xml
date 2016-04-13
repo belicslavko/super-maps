@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e59fef41-7e67-4529-a3e7-94788c42c1b5" name="supermaps" url="http://headmade.rs">
+        <fileTransfer host="headmade.rs" port="21" rootFolder="/public_html/web/stojanov/wp-content/plugins/super-maps" password="dfd8dfdcdfcedfefdff2df92dfe2df9bdfebdff2" username="headm">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
