@@ -1,4 +1,4 @@
-supermaps
+supermaps beta
 =========
 
 Wordpress Plugin for google maps
